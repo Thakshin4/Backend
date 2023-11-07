@@ -6,9 +6,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { PostCreateComponent } from './post-create/post-create.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, PostComponent, PostCreateComponent],
+  declarations: [AppComponent, PostComponent, PostCreateComponent, RegistrationComponent, LoginComponent  ],
   imports: [BrowserModule, HttpClientModule, FormsModule, ReactiveFormsModule], // Add these modules
   providers: [],
   bootstrap: [AppComponent],

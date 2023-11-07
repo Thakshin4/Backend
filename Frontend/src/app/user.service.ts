@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-  private backendUrl = 'https://localhost:3000'; // Replace with your actual API URL
+  private backendUrl = 'https://localhost:3000/api/users'; // Replace with your actual API URL
 
   constructor(private http: HttpClient) {}
 
