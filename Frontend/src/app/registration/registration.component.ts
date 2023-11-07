@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserService } from '../user.service'; // Update with the correct path
+import { UserService } from '../service/user.service'; // Update with the correct path
 
 @Component({
   selector: 'app-registration',

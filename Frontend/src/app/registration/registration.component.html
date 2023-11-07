@@ -9,7 +9,16 @@
         [(ngModel)]="userData.username"
         name="username"
         required
+        minlength="5"
+        maxlength="20"
       />
+      <div *ngIf="username.errors.required">Username is required.</div>
+      <div *ngIf="username.errors.minlength">
+        Username must be at least 5 characters long.
+      </div>
+      <div *ngIf="username.errors.maxlength">
+        Username cannot exceed 20 characters.
+      </div>
     </div>
     <div>
       <label for="password">Password:</label>
